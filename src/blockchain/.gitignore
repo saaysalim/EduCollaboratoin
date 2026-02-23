@@ -1,0 +1,39 @@
+# Compiled contract JSON files
+/build/
+
+# Node.js dependencies (if using Node.js/Truffle)
+node_modules/
+
+# Truffle-related files
+.truffle/
+
+# Local development blockchain (if using Ganache)
+*.log
+*.pid
+*.pid.lock
+*.ipc
+*.sock
+
+# Coverage reports (if using Solidity coverage tools)
+coverage/
+coverage.json
+
+# Test artifacts
+test-results/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Cache and temporary files
+.cache/
+*.temp
+*.tmp
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Ethereum Virtual Machine Debugger files
+dapp_testnet.log
