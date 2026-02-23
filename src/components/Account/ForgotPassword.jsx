@@ -57,7 +57,7 @@ const ForgotPassword = () => {
   const handleCodeChange = async (e) => {
     setStatus({ ...status, inputs: { ...status.inputs, code: "" } });
     const code = e.target.value;
-    if (code.length == 6 && code !== verificationCode) {
+    if (code.length === 6 && code !== verificationCode) {
       setStatus({ ...status, inputs: { ...status.inputs, code: "error" } });
     } else {
       await deactivateToken(token);

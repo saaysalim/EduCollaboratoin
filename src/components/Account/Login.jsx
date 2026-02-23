@@ -44,12 +44,12 @@ const Login = () => {
           localStorage.setItem("currentUser", JSON.stringify(res.result));
 
           //login success, redirect to pages
-          if (res.result.account_status == "not-approved") {
+          if (res.result.account_status === "not-approved") {
             message.success("Log in Successfull!");
             setTimeout(() => {
               navigate("/account/account-not-verified");
             }, 500);
-          } else if (res.result.account_status == "banned") {
+          } else if (res.result.account_status === "banned") {
             message.success("Log in Successfull!");
             setTimeout(() => {
               navigate("/account/account-banned");

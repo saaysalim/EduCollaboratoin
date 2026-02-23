@@ -123,7 +123,7 @@ function App() {
     fetcher("get-departments")
       .then((res) => {
         const depts = res.result;
-        if (depts != undefined) {
+        if (depts !== undefined) {
           const departments = [];
           depts.map((dept) =>
             departments.push({ name: dept.title, value: dept._id })
@@ -141,7 +141,7 @@ function App() {
     fetcher("get-courses")
       .then((res) => {
         const courses = res.result;
-        if (courses != undefined) dispatch(setCourses(courses));
+        if (courses !== undefined) dispatch(setCourses(courses));
       })
       .catch((err) => {
         console.log("FETCH COURSES ERROR", err);
@@ -153,7 +153,7 @@ function App() {
     fetcher("get-users")
       .then((res) => {
         const users = res.result;
-        if (users != undefined) dispatch(setUsers(users));
+        if (users !== undefined) dispatch(setUsers(users));
       })
       .catch((err) => {
         console.log("FETCH USERS ERROR", err);
@@ -165,7 +165,7 @@ function App() {
     fetcher("get-lessons")
       .then((res) => {
         const lessons = res.result;
-        if (lessons != undefined) dispatch(setLessons(lessons));
+        if (lessons !== undefined) dispatch(setLessons(lessons));
       })
       .catch((err) => {
         console.log("FETCH LESSONS ERROR", err);
@@ -177,7 +177,7 @@ function App() {
     fetcher("get-course-regs")
       .then((res) => {
         const regs = res.result;
-        if (regs != undefined) dispatch(setCourseRegs(regs));
+        if (regs !== undefined) dispatch(setCourseRegs(regs));
       })
       .catch((err) => {
         console.log("FETCH COURSEREGS ERROR", err);
@@ -189,7 +189,7 @@ function App() {
     fetcher("get-exams")
       .then((res) => {
         const exams = res.result;
-        if (exams != undefined) dispatch(setExams(exams));
+        if (exams !== undefined) dispatch(setExams(exams));
       })
       .catch((err) => {
         console.log("FETCH EXAMS ERROR", err);
@@ -201,7 +201,7 @@ function App() {
     fetcher("get-all-student-activities")
       .then((res) => {
         const activities = res.result;
-        if (activities != undefined) dispatch(setStudentActivities(activities));
+        if (activities !== undefined) dispatch(setStudentActivities(activities));
       })
       .catch((err) => {
         console.log("FETCH ACTIVITIES ERROR", err);
@@ -213,7 +213,7 @@ function App() {
     fetcher("get-all-student-notes")
       .then((res) => {
         const notes = res.result;
-        if (notes != undefined) dispatch(setStudentNotes(notes));
+        if (notes !== undefined) dispatch(setStudentNotes(notes));
       })
       .catch((err) => {
         console.log("FETCH ACTIVITIES ERROR", err);

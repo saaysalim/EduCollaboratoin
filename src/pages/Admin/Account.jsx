@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { renderStatus, sendEmail } from "../../_services";
 import { Avatar, Button, Input, Modal, Select, message } from "antd";
 import { useEffect, useState } from "react";
-import { PlusCircleFilled, UserOutlined } from "@ant-design/icons";
+import { UserOutlined } from "@ant-design/icons";
 import { fetcher } from "../../_services";
 import { setUsers } from "../../store/store";
 import { validateEmail, matchValues } from "../../_services";

@@ -6,8 +6,6 @@ import { useEffect, useState } from "react";
 import { validateEmail, matchValues, fetcher } from "../../_services";
 import { useNavigate } from "react-router-dom";
 import API_URL from "../../apiUrl";
-import Web3 from "web3";
-import StudentData from "../../blockchain/build/contracts/StudentData.json";
 
 const Signup = () => {
   const navigate = useNavigate();

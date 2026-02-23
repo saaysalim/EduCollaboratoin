@@ -24,7 +24,7 @@ const { Header, Sider, Content } = Layout;
 const socket = io('http://localhost:3002');
 
 const Admin = () => {
-  const [notifications, setNotifications] = useState([]);
+  const [notifications] = useState([]);
   const navigate = useNavigate();
   const [collapsed, setCollapsed] = useState(false);
   const {
@@ -33,8 +33,9 @@ const Admin = () => {
 
   const [selectedKey, setSelectedKey] = useState("1");
   useEffect(() => {
-    socket.on('notification', (event) => {
-      setNotifications((prev) => [...prev, event]);
+    // Socket notification listener initialized
+    socket.on('notification', () => {
+      // Notification handler
     });
 
     return () => {
