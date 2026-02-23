@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/EduCollaboratoin/static/css/main.4f66fa07.css",
-    "main.js": "/EduCollaboratoin/static/js/main.db034f47.js",
+    "main.js": "/EduCollaboratoin/static/js/main.18df04ff.js",
     "static/media/3delearning.png": "/EduCollaboratoin/static/media/3delearning.765b4671093f98a890dc.png",
     "index.html": "/EduCollaboratoin/index.html",
     "main.4f66fa07.css.map": "/EduCollaboratoin/static/css/main.4f66fa07.css.map",
-    "main.db034f47.js.map": "/EduCollaboratoin/static/js/main.db034f47.js.map"
+    "main.18df04ff.js.map": "/EduCollaboratoin/static/js/main.18df04ff.js.map"
   },
   "entrypoints": [
     "static/css/main.4f66fa07.css",
-    "static/js/main.db034f47.js"
+    "static/js/main.18df04ff.js"
   ]
 }
